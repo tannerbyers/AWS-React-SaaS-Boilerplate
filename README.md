@@ -2,6 +2,10 @@ Modern Fullstack SaaS Template w. AWS
 
 ## Goals
 
+Develop a Template to make Software as a Service software within AWS that looks modern.
+
+I want to make this template generic for many different SaaS use cases but also lays a solid foundation.
+
 - ### Deploy with AWS
   [ ] S3
   [ ] Cognito
