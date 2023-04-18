@@ -7,23 +7,28 @@ Develop a Template to make Software as a Service software within AWS that looks 
 I want to make this template generic for many different SaaS use cases but also lays a solid foundation.
 
 - ### Deploy with AWS
-  [ ] S3
-  [ ] Cognito
-  [ ] CodePipeline
-  [ ] DynamoDB
+- [ ] S3
+- [ ] Cognito
+- [ ] CodePipeline
+- [ ] DynamoDB
+
+
 - ###  Build with Modern Tech Stack
-  [X] React
-  [ ] Express.js
-  [X] Vite
-  [X] WindiCSS
-  [] AWS CDK
-  [X] AWS Amplify
+- [X] React
+- [ ] Express.js
+- [X] Vite
+- [X] WindiCSS
+- [] AWS CDK
+- [X] AWS Amplify
+
+
 - ### Generic SaaS Template
-  [X] Landing Page
-  [X] Login
-  [X] Sign up
-  [X] Dashboard
-  [ ] API Integration
+- [X] Landing Page
+- [X] Login
+- [X] Sign up
+- [X] Dashboard
+- [ ] API Integration
+- [ ] Payment Integration
 
 - ### Cost Efficient
   - Static hosting or Serverless if Possible
