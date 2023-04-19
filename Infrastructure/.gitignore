@@ -1,3 +1,5 @@
+cdk.out
+
 dist
 dist-ssr
 *.local

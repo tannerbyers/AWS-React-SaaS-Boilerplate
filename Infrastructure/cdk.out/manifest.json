@@ -1,0 +1,269 @@
+{
+  "version": "29.0.0",
+  "artifacts": {
+    "PushEnhance-APIStack.assets": {
+      "type": "cdk:asset-manifest",
+      "properties": {
+        "file": "PushEnhance-APIStack.assets.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+      }
+    },
+    "PushEnhance-APIStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "PushEnhance-APIStack.template.json",
+        "validateOnSynth": false,
+        "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-deploy-role-${AWS::AccountId}-${AWS::Region}",
+        "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-cfn-exec-role-${AWS::AccountId}-${AWS::Region}",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/a19296b5c428fde25207e388ed3a3d0d4d37c7306b57ee33b8f7038b12ece38c.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
+        "additionalDependencies": [
+          "PushEnhance-APIStack.assets"
+        ],
+        "lookupRole": {
+          "arn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-lookup-role-${AWS::AccountId}-${AWS::Region}",
+          "requiresBootstrapStackVersion": 8,
+          "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+        }
+      },
+      "dependencies": [
+        "PushEnhance-APIStack.assets"
+      ],
+      "metadata": {
+        "/PushEnhance-APIStack/Base": [
+          {
+            "type": "aws:cdk:hasPhysicalName",
+            "data": {
+              "Ref": "Base93336DB5"
+            }
+          }
+        ],
+        "/PushEnhance-APIStack/Base/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Base93336DB5"
+          }
+        ],
+        "/PushEnhance-APIStack/serverlessExpressFunction/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "serverlessExpressFunctionServiceRoleAD1C9A59"
+          }
+        ],
+        "/PushEnhance-APIStack/serverlessExpressFunction/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "serverlessExpressFunctionServiceRoleDefaultPolicyE86D2FF3"
+          }
+        ],
+        "/PushEnhance-APIStack/serverlessExpressFunction/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "serverlessExpressFunction0F23EAFF"
+          }
+        ],
+        "/PushEnhance-APIStack/httpApi/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "httpApiC9FAD708"
+          }
+        ],
+        "/PushEnhance-APIStack/httpApi/DefaultStage/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "httpApiDefaultStage49B103A5"
+          }
+        ],
+        "/PushEnhance-APIStack/httpApi/ANY--/LambdaProxyIntegration/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "httpApiANYLambdaProxyIntegration6BFFCAD7"
+          }
+        ],
+        "/PushEnhance-APIStack/httpApi/ANY--/LambdaProxyIntegration-Permission": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "httpApiANYLambdaProxyIntegrationPermission4A5C53B8"
+          }
+        ],
+        "/PushEnhance-APIStack/httpApi/ANY--/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "httpApiANYB8D1566D"
+          }
+        ],
+        "/PushEnhance-APIStack/httpApi/ANY--{proxy+}/LambdaProxyIntegration-Permission": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "httpApiANYproxyLambdaProxyIntegrationPermission0A107F0B"
+          }
+        ],
+        "/PushEnhance-APIStack/httpApi/ANY--{proxy+}/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "httpApiANYproxy8B9839FD"
+          }
+        ],
+        "/PushEnhance-APIStack/Api version endpoint: ": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Apiversionendpoint"
+          }
+        ],
+        "/PushEnhance-APIStack/env: ": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "env"
+          }
+        ],
+        "/PushEnhance-APIStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/PushEnhance-APIStack/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable"
+          }
+        ],
+        "/PushEnhance-APIStack/BootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BootstrapVersion"
+          }
+        ],
+        "/PushEnhance-APIStack/CheckBootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CheckBootstrapVersion"
+          }
+        ]
+      },
+      "displayName": "PushEnhance-APIStack"
+    },
+    "PushEnhance-FrontendStack.assets": {
+      "type": "cdk:asset-manifest",
+      "properties": {
+        "file": "PushEnhance-FrontendStack.assets.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+      }
+    },
+    "PushEnhance-FrontendStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "PushEnhance-FrontendStack.template.json",
+        "validateOnSynth": false,
+        "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-deploy-role-${AWS::AccountId}-${AWS::Region}",
+        "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-cfn-exec-role-${AWS::AccountId}-${AWS::Region}",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/ad712e33496e2d4f4823d4c2f9b2b3b514ae30481ed1042392c3569b111fc0cf.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
+        "additionalDependencies": [
+          "PushEnhance-FrontendStack.assets"
+        ],
+        "lookupRole": {
+          "arn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-lookup-role-${AWS::AccountId}-${AWS::Region}",
+          "requiresBootstrapStackVersion": 8,
+          "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+        }
+      },
+      "dependencies": [
+        "PushEnhance-FrontendStack.assets"
+      ],
+      "metadata": {
+        "/PushEnhance-FrontendStack/my-static-website-bucket/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "mystaticwebsitebucket48FB1B1C"
+          }
+        ],
+        "/PushEnhance-FrontendStack/my-static-website-bucket/Policy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "mystaticwebsitebucketPolicyFCAD3424"
+          }
+        ],
+        "/PushEnhance-FrontendStack/deployStaticWebsite/AwsCliLayer/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "deployStaticWebsiteAwsCliLayer74CBF04E"
+          }
+        ],
+        "/PushEnhance-FrontendStack/deployStaticWebsite/CustomResource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "deployStaticWebsiteCustomResource73B4205E"
+          }
+        ],
+        "/PushEnhance-FrontendStack/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756CServiceRole89A01265"
+          }
+        ],
+        "/PushEnhance-FrontendStack/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756CServiceRoleDefaultPolicy88902FDF"
+          }
+        ],
+        "/PushEnhance-FrontendStack/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C81C01536"
+          }
+        ],
+        "/PushEnhance-FrontendStack/UI url": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "UIurl"
+          }
+        ],
+        "/PushEnhance-FrontendStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/PushEnhance-FrontendStack/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable"
+          }
+        ],
+        "/PushEnhance-FrontendStack/S3-static-websiteMap": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "S3staticwebsiteMap"
+          }
+        ],
+        "/PushEnhance-FrontendStack/BootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BootstrapVersion"
+          }
+        ],
+        "/PushEnhance-FrontendStack/CheckBootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CheckBootstrapVersion"
+          }
+        ]
+      },
+      "displayName": "PushEnhance-FrontendStack"
+    },
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    }
+  }
+}
