@@ -27,6 +27,7 @@
     "compression": "^1.7.4",
     "constructs": "^10.0.0",
     "cors": "^2.8.5",
+    "dot-env": "^0.0.1",
     "dotenv": "^16.0.3",
     "serverless-http": "^3.1.1",
     "source-map-support": "^0.5.21"

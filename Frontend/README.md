@@ -22,6 +22,17 @@ This project uses many tools like:
 
 ## Getting Started
 
+| :exclamation: Make sure the values are the same between `Frontend/.env_example` and `Infrastructure/.env_example` |
+| ----------------------------------------------------------------------------------------------------------------- |
+
+1. Copy `.env_example` to `.env`
+2. Set the Cognito user pool and web client in the .env you created.
+
+```
+  VITE_USER_POOL_ID=us-east-asdfasdf
+  VITE_WEB_CLIENT_ID=5jdhp59miciioagsdsdhb8t023l
+```
+
 ### Install
 
 Install dependencies.
