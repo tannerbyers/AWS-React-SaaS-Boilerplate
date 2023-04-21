@@ -4,16 +4,28 @@ import * as s3 from "aws-cdk-lib/aws-s3";
 import * as s3Deployment from "aws-cdk-lib/aws-s3-deployment";
 import { aws_cloudfront as cloudfront } from "aws-cdk-lib";
 import { aws_cognito as cognito } from "aws-cdk-lib";
+import { config } from "dotenv";
+config();
 
+const app = new cdk.App();
 export class FrontendStack extends cdk.Stack {
   constructor(scope: Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
 
+    const websiteBucketName =
+      process.env.WEBSITE_BUCKET_NAME || "saas-template-bucket";
+    const userPoolName =
+      process.env.USER_POOL_NAME || "saas-template-user-pool";
+    const frontendDistPath =
+      process.env.FRONTEND_DIST_PATH || "../Frontend/dist";
+
     // Create S3 Bucket for Frontend
-    const websiteBucket = new s3.Bucket(this, "my-static-website-bucket", {
+    const websiteBucket = new s3.Bucket(this, websiteBucketName, {
       publicReadAccess: true,
       removalPolicy: cdk.RemovalPolicy.DESTROY,
       websiteIndexDocument: "index.html",
+      autoDeleteObjects: true
+    
     });
 
     // Deploy S3 Bucket as website
@@ -21,7 +33,7 @@ export class FrontendStack extends cdk.Stack {
       this,
       "deployStaticWebsite",
       {
-        sources: [s3Deployment.Source.asset("../Frontend/dist")],
+        sources: [s3Deployment.Source.asset(frontendDistPath)],
         destinationBucket: websiteBucket,
       }
     );
@@ -70,14 +82,12 @@ export class FrontendStack extends cdk.Stack {
     );
 
     // Set Up cognito
-    new cognito.UserPool(this, 'saasuserpool', {
-      userPoolName: 'saas-userpool',
+    new cognito.UserPool(this, userPoolName + "id", {
+      userPoolName: userPoolName,
       selfSignUpEnabled: true,
       signInAliases: {
         email: true,
       },
-    
     });
-    
   }
 }
