@@ -1,0 +1,142 @@
+{
+  "version": "29.0.0",
+  "artifacts": {
+    "FrontendStack.assets": {
+      "type": "cdk:asset-manifest",
+      "properties": {
+        "file": "FrontendStack.assets.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+      }
+    },
+    "FrontendStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "FrontendStack.template.json",
+        "validateOnSynth": false,
+        "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-deploy-role-${AWS::AccountId}-${AWS::Region}",
+        "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-cfn-exec-role-${AWS::AccountId}-${AWS::Region}",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/29338f2184971d88c4aefca3e220e5da909a9e7ed30438607c3220a9a7b8f8ca.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
+        "additionalDependencies": [
+          "FrontendStack.assets"
+        ],
+        "lookupRole": {
+          "arn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-lookup-role-${AWS::AccountId}-${AWS::Region}",
+          "requiresBootstrapStackVersion": 8,
+          "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+        }
+      },
+      "dependencies": [
+        "FrontendStack.assets"
+      ],
+      "metadata": {
+        "/FrontendStack/my-static-website-bucket/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "mystaticwebsitebucket48FB1B1C"
+          }
+        ],
+        "/FrontendStack/my-static-website-bucket/Policy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "mystaticwebsitebucketPolicyFCAD3424"
+          }
+        ],
+        "/FrontendStack/deployStaticWebsite/AwsCliLayer/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "deployStaticWebsiteAwsCliLayer74CBF04E"
+          }
+        ],
+        "/FrontendStack/deployStaticWebsite/CustomResource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "deployStaticWebsiteCustomResource73B4205E"
+          }
+        ],
+        "/FrontendStack/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756CServiceRole89A01265"
+          }
+        ],
+        "/FrontendStack/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756CServiceRoleDefaultPolicy88902FDF"
+          }
+        ],
+        "/FrontendStack/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C81C01536"
+          }
+        ],
+        "/FrontendStack/UI url": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "UIurl"
+          }
+        ],
+        "/FrontendStack/MyOriginAccessIdentity/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyOriginAccessIdentity96ED0331"
+          }
+        ],
+        "/FrontendStack/MyDistribution/CFDistribution": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyDistributionCFDistributionDE147309"
+          }
+        ],
+        "/FrontendStack/saasuserpool/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "saasuserpoolD062CD8A"
+          }
+        ],
+        "/FrontendStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/FrontendStack/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable"
+          }
+        ],
+        "/FrontendStack/S3-static-websiteMap": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "S3staticwebsiteMap"
+          }
+        ],
+        "/FrontendStack/BootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BootstrapVersion"
+          }
+        ],
+        "/FrontendStack/CheckBootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CheckBootstrapVersion"
+          }
+        ]
+      },
+      "displayName": "FrontendStack"
+    },
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    }
+  }
+}

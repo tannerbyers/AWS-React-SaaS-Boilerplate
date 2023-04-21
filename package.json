@@ -1,0 +1,22 @@
+{
+  "name": "modern-saas-template-aws-react-nodejs",
+  "version": "0.1.0",
+  "description": "This is a generic template designed for creating Software as a Service (SaaS) applications within the Amazon Web Services (AWS) environment. It is built using modern technologies and provides a solid foundation for building a scalable and cost-efficient SaaS application that is mobile responsive and suitable for startups.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "synth": "cd Infrastructure && cdk synth",
+    "deploy": "cd Infrastructure && cdk deploy",
+    "install": "cd Frontend && npm i",
+    "local": "cd Frontend && npm run dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tannerbyers/tannerbyers-Modern-Saas-Template-AWS-React-NodeJs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tannerbyers/tannerbyers-Modern-Saas-Template-AWS-React-NodeJs/issues"
+  },
+  "homepage": "https://github.com/tannerbyers/tannerbyers-Modern-Saas-Template-AWS-React-NodeJs#readme"
+}

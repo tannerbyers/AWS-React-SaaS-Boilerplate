@@ -1,29 +1,40 @@
-# Modern Fullstack SaaS Template with AWS
+Here's an updated version of the README, showcasing a modern full-stack SaaS template built using AWS:
 
-This is a generic template designed for creating Software as a Service (SaaS) applications within the Amazon Web Services (AWS) environment. It is built using modern technologies and provides a solid foundation for building a scalable and cost-efficient SaaS application that is mobile responsive and suitable for startups.
+# Modern Frontend SaaS Template with AWS
 
-## Goals
+Modern Frontend SaaS Template with AWS is a generic template designed for creating Software as a Service (SaaS) UIs within the Amazon Web Services (AWS) environment. It provides a solid foundation for building a scalable and cost-efficient SaaS application that is mobile responsive and suitable for startups.
 
-The goal of this template is to provide a modern and generic SaaS template that can be used for different SaaS use cases. It is built with the following goals in mind:
+## Features
 
-- **Deploy with AWS:** The template should be easy to deploy within the AWS environment. It uses the following AWS services: S3, Cognito, CodePipeline, and DynamoDB.
-- **Build with Modern Tech Stack:** The template should be built with modern technologies. It uses the following tech stack: React, Express.js, Vite, WindiCSS, AWS CDK, and AWS Amplify.
-- **Generic SaaS Template:** The template should provide a generic SaaS template that can be used for different SaaS use cases. It includes landing pages, login, sign-up, dashboard, API integration, and payment integration.
-- **Cost Efficient:** The template should be cost-efficient by using static hosting or serverless architecture wherever possible.
-- **Scalable:** The template should be scalable and able to handle a growing number of users.
-- **Mobile Responsive:** The template should be mobile responsive and able to adapt to different screen sizes.
-- **Built for Startups:** The template should be built with startups in mind.
+- Deploy with AWS: The template is easy to deploy within the AWS environment using S3, Cloudfront, and Cognito.
+- Built with Modern Tech Stack: The template is built using modern technologies like React, Vite, WindiCSS, AWS CDK, and AWS Amplify.
+- Generic SaaS Template: The template provides landing pages, login, sign-up, dashboard.
+- Cost Efficient: The template is cost-efficient by using static hosting or serverless architecture wherever possible.
+- Scalable: The template is scalable and able to handle a growing number of users.
+- Mobile Responsive: The template is mobile responsive and able to adapt to different screen sizes.
+- Built for Startups: The template is built with startups in mind.
 
+## Screenshots
+
+![Landing Page Screenshot](readme_assets/landing_page.png)
+![Login and Signup Pages Screenshot](readme_assets/login_and_signup_pages.png)
+![Dashboard Page Screenshot](readme_assets/dashboard_page.png)
+
+## Installation
+
+1. Clone the repository.
+2. Install dependencies by running `npm install`.
+3. Set up your AWS account in [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html)
+4. Customize the application to your needs.
+5. DEPLOY! `npm run deploy`
+6. or run locally w/ `npm run local`
 ## To-Do
 
-The following are the tasks that need to be completed:
+The following tasks need to be completed:
 
-- **Add More Sections to Landing Page:** Add more sections to the landing page, such as "About us," "Features," "FAQ," and "Pricing." Take inspiration from the example at https://demo.nextlessjs.com/.
-- **Add Subscription with Stripe:** Add a subscription service using Stripe.
-- **Multi-tenancy & Team Capabilities:** Allow users to invite teammates by email to shared resources.
-- **An Easy Way to Set Themes:** Add an easy way to set themes.
-- **Build out REST API:** Build out the REST API.
-- **CICD Setup:** Set up continuous integration and continuous deployment.
+- Add Subscription with Stripe: Add a subscription service using Stripe.
+- An Easy Way to Set Themes: Add an easy way to set themes.
+- CICD Setup: Set up continuous integration and continuous deployment with CodePipeline.
 
 ## License
 
