@@ -24,6 +24,7 @@ export class FrontendStack extends cdk.Stack {
       publicReadAccess: true,
       removalPolicy: cdk.RemovalPolicy.DESTROY,
       websiteIndexDocument: "index.html",
+      // This most likely should be removed in production env. This allows for easy deletion of s3 for template testing
       autoDeleteObjects: true
     
     });

@@ -1,0 +1,16 @@
+# Node.js dependencies
+node_modules/
+*.log
+
+# React project
+/Frontend/node_modules/
+/Frontend/build/
+/Frontend/.env
+
+# CDK project
+/Infrastructure/out/
+/Infrastructure/cdk.context.json
+
+# OS generated files
+.DS_Store
+Thumbs.db
