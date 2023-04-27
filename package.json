@@ -4,9 +4,9 @@
   "description": "This is a generic template designed for creating Software as a Service (SaaS) applications within the Amazon Web Services (AWS) environment. It is built using modern technologies and provides a solid foundation for building a scalable and cost-efficient SaaS application that is mobile responsive and suitable for startups.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "synth": "cd Infrastructure && cdk synth",
-    "deploy": "cd Infrastructure && cdk deploy",
-    "install": "cd Frontend && npm i",
+    "install": "cd Frontend && npm i && cd ../Infrastructure && npm i",
+    "synth": "cd Frontend && npm  run build && cd ../Infrastructure && cdk synth",
+    "deploy": "cd Frontend && npm  run build && cd ../Infrastructure && cdk deploy",
     "local": "cd Frontend && npm run dev"
   },
   "repository": {
