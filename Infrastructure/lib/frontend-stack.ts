@@ -5,7 +5,7 @@ import * as s3Deployment from "aws-cdk-lib/aws-s3-deployment";
 import { aws_cloudfront as cloudfront } from "aws-cdk-lib";
 import { aws_cognito as cognito } from "aws-cdk-lib";
 import { config } from "dotenv";
-config();
+config({});
 
 const app = new cdk.App();
 export class FrontendStack extends cdk.Stack {
@@ -25,8 +25,9 @@ export class FrontendStack extends cdk.Stack {
       removalPolicy: cdk.RemovalPolicy.DESTROY,
       websiteIndexDocument: "index.html",
       // This most likely should be removed in production env. This allows for easy deletion of s3 for template testing
-      autoDeleteObjects: true
-    
+      autoDeleteObjects: true,
+      blockPublicAccess: s3.BlockPublicAccess.BLOCK_ACLS,
+      accessControl: s3.BucketAccessControl.BUCKET_OWNER_FULL_CONTROL
     });
 
     // Deploy S3 Bucket as website
