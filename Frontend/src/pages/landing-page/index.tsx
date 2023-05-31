@@ -2,12 +2,12 @@ import Footer from 'components/Footer'
 import Header from 'components/Header'
 import React, { FC } from 'react'
 import img1 from '../../assets/images/iPhone-12-Mockup.png'
-import img2 from '../../assets/images/Cloudflare-Logo.svg'
-import img3 from '../../assets/images/Google-Logo.webp'
-import img4 from '../../assets/images/PayPal-Logo.png'
-import img5 from '../../assets/images/placeholder.png'
-import img6 from '../../assets/images/Shopify-Logo.svg'
-
+import img2 from '../../assets/images/tailwind.svg'
+import img3 from '../../assets/images/aws.svg'
+import img4 from '../../assets/images/stripe.svg'
+import img5 from '../../assets/images/Data Arranging_Outline.svg'
+import img6 from '../../assets/images/react.svg'
+import racoonSVG from '../../assets/images/racoon.svg'
 interface landingPage {
   title: string
 }
@@ -20,18 +20,18 @@ const LandingPage: FC<landingPage> = ({ title }) => {
         <div className="max-w-7xl mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
           <div className="lg:flex-grow md:w-1/2 md:ml-24 pt-6 flex flex-col md:items-start md:text-left mb-40 items-center text-center">
             <h1 className="mb-5 sm:text-6xl text-5xl items-center Avenir xl:w-2/2 text-gray-900">
-              Revolutionize Your Marketing
+              EDI Processing for the Modern Age
             </h1>
             <p className="mb-4 xl:w-3/4 text-gray-600 text-lg">
-              Experience the benefits of AI-driven targeting, personalization,
-              and optimization.
+              Unleash the power of seamless EDI data parsing, validation, and
+              testing for X12, EDIFACT, and more!
             </p>
             <div className="flex justify-center">
               <a
                 className="inline-flex items-center px-5 py-3 mt-2 font-medium text-white transition duration-500 ease-in-out transform bg-transparent border rounded-lg bg-gray-900"
-                href="https://github.com/r1/nine4-2/"
+                href="#"
               >
-                <span className="justify-center">Find out more</span>
+                <span className="justify-center">Sign Up</span>
               </a>
             </div>
           </div>
@@ -39,7 +39,7 @@ const LandingPage: FC<landingPage> = ({ title }) => {
             <img
               className="w-80 md:ml-1 ml-24"
               alt="iPhone-12"
-              src={img1}
+              src={racoonSVG}
             ></img>
           </div>
         </div>
@@ -47,35 +47,35 @@ const LandingPage: FC<landingPage> = ({ title }) => {
           <div className="container px-5 mx-auto lg:px-24 ">
             <div className="flex flex-col w-full mb-4 text-left lg:text-center">
               <h1 className="mb-8 text-2xl Avenir font-semibold text-black">
-                Trusted by top-tier product companies
+                Leveraging top-tier product companies
               </h1>
             </div>
             <div className="grid grid-cols-2 gap-16 mb-16 text-center lg:grid-cols-4">
               <div className="flex items-center justify-center">
                 <img
                   src={img3}
-                  alt="Google Logo"
+                  alt="AWS Logo"
                   className="block object-contain h-16 greyC"
                 ></img>
               </div>
               <div className="flex items-center justify-center">
                 <img
                   src={img6}
-                  alt="Shopify Logo"
+                  alt="React Logo"
                   className="block object-contain h-16 greyC"
                 ></img>
               </div>
               <div className="flex items-center justify-center">
                 <img
                   src={img2}
-                  alt="Cloudflare Logo"
+                  alt="Tailwind Logo"
                   className="block object-contain h-16 greyC"
                 ></img>
               </div>
               <div className="flex items-center justify-center">
                 <img
                   src={img4}
-                  alt="Paypal Logo"
+                  alt="Stripe Logo"
                   className="block object-contain h-16 greyC"
                 ></img>
               </div>
@@ -84,10 +84,11 @@ const LandingPage: FC<landingPage> = ({ title }) => {
         </section>
         <div className="grr max-w-7xl pt-20 mx-auto text-center">
           <h1 className="mb-8 text-6xl Avenir font-semibold text-gray-900">
-            Less code, less effort.
+            Less code, more customization.
           </h1>
           <h1 className="mb-8 text-2xl Avenir font-semibold text-gray-600 text-center">
-            Minify your CSS with Tailwind's built in PostCSS support.
+            Modern EDI Parser with custom validation configurations and
+            reporting.
           </h1>
           <div className="container flex flex-col items-center justify-center mx-auto rounded-lg ">
             <img
@@ -101,10 +102,10 @@ const LandingPage: FC<landingPage> = ({ title }) => {
           <div className="max-w-6xl mx-auto px-4 sm:px-6 text-center">
             <div className="py-24 md:py-36">
               <h1 className="mb-5 text-6xl Avenir font-semibold text-gray-900">
-                Subscribe to our newsletter
+                Sign up for our beta!
               </h1>
               <h1 className="mb-9 text-2xl font-semibold text-gray-600">
-                Enter your email address and get our newsletters straight away.
+                Enter your email address and get our updates straight away.
               </h1>
               <input
                 placeholder="jack@example.com"

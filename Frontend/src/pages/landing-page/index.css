@@ -1,0 +1,68 @@
+/* Text editor container */
+.text-editor {
+  height: 400px;
+  border: 1px solid #ccc;
+  background-color: #f5f5f5;
+  font-family: Consolas, Monaco, 'Courier New', monospace;
+  font-size: 14px;
+  line-height: 1.5;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* Code highlighting */
+.text-editor code {
+  color: #333;
+}
+
+/* Comments */
+.text-editor code .comment {
+  color: #888;
+  font-style: italic;
+}
+
+/* Keywords */
+.text-editor code .keyword {
+  color: #007bff;
+  font-weight: bold;
+}
+
+/* Strings */
+.text-editor code .string {
+  color: #e83e8c;
+}
+
+/* Numbers */
+.text-editor code .number {
+  color: #17a2b8;
+}
+
+/* Operators */
+.text-editor code .operator {
+  color: #555;
+}
+
+/* Function or method names */
+.text-editor code .function {
+  color: #007bff;
+}
+
+/* Variables */
+.text-editor code .variable {
+  color: #333;
+}
+
+/* CSS selectors */
+.text-editor code .selector {
+  color: #d63384;
+}
+
+/* HTML tags */
+.text-editor code .tag {
+  color: #6f42c1;
+}
+
+/* Punctuation */
+.text-editor code .punctuation {
+  color: #555;
+}
