@@ -18,6 +18,8 @@ export default function Navigation({
   activeHref,
   setActiveHref
 }: NavigationProps) {
+  console.log(activeHref)
+
   return (
     <>
       <SideNavigation

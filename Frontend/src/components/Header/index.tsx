@@ -12,7 +12,7 @@ export default function Header() {
             className="text-lg font-semibold rounded-lg tracking-widest focus:outline-none focus:shadow-outline"
           >
             <h1 className="text-4xl Avenir tracking-tighter text-gray-900 md:text-4x1 lg:text-3xl">
-              Push Enhance
+              Racoon EDI
             </h1>
           </a>
           <button

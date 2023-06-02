@@ -7,141 +7,21 @@ export default function Footer() {
             <h2 className="text-sm tracking-wide text-gray-900 uppercase font-bold">
               Company
             </h2>
-            <ul className="space-y-4 text-md">
-              <li>
-                <a
-                  className="hover:text-gray-900 transition-colors duration-200 text-2xl"
-                  href="/"
-                >
-                  Jobs
-                </a>
-              </li>
-              <li>
-                <a
-                  className="hover:text-gray-900 transition-colors duration-200 text-2xl"
-                  href="/"
-                >
-                  Merch
-                </a>
-              </li>{' '}
-              <li>
-                <a
-                  className="hover:text-gray-900 transition-colors duration-200 text-2xl"
-                  href="/"
-                >
-                  Brand
-                </a>
-              </li>{' '}
-              <li>
-                <a
-                  className="hover:text-gray-900 transition-colors duration-200 text-2xl"
-                  href="/"
-                >
-                  Meetups
-                </a>
-              </li>
-            </ul>
           </li>
           <li className="space-y-5 row-span-2">
             <h2 className="text-sm tracking-wide text-gray-900 uppercase font-bold">
               Newsroom
             </h2>
-            <ul className="space-y-4">
-              <li>
-                <a
-                  className="hover:text-gray-900 transition-colors duration-200 text-2xl"
-                  href="/"
-                >
-                  News
-                </a>
-              </li>
-              <li>
-                <a
-                  className="hover:text-gray-900 transition-colors duration-200 text-2xl"
-                  href="/"
-                >
-                  Press
-                </a>
-              </li>
-              <li>
-                <a
-                  className="hover:text-gray-900 transition-colors duration-200 text-2xl"
-                  href="/"
-                >
-                  Blog
-                </a>
-              </li>
-            </ul>
           </li>
           <li className="space-y-5 row-span-2">
             <h2 className="text-sm tracking-wide text-gray-900 uppercase font-bold">
               Products
             </h2>
-            <ul className="space-y-4">
-              <li>
-                <a
-                  className="hover:text-gray-900 transition-colors duration-200 text-2xl"
-                  href="/"
-                >
-                  Hosting
-                </a>
-              </li>
-              <li>
-                <a
-                  className="hover:text-gray-900 transition-colors duration-200 text-2xl"
-                  href="/"
-                >
-                  Domains
-                </a>
-              </li>
-              <li>
-                <a
-                  className="hover:text-gray-900 transition-colors duration-200 text-2xl"
-                  href="/"
-                >
-                  Security
-                </a>
-              </li>
-              <li>
-                <a
-                  className="hover:text-gray-900 transition-colors duration-200 text-2xl"
-                  href="/"
-                >
-                  SSL
-                </a>
-              </li>
-            </ul>
           </li>
           <li className="space-y-5">
             <h2 className="text-sm tracking-wide text-gray-900 uppercase font-bold">
               Connect
             </h2>
-            <ul className="space-y-4">
-              <li>
-                <a
-                  className="hover:text-gray-900 transition-colors duration-200 text-2xl"
-                  href="/"
-                >
-                  Twitter
-                </a>
-              </li>
-              <li>
-                <a
-                  className="hover:text-gray-900 transition-colors duration-200 text-2xl"
-                  href="/"
-                >
-                  Facebook
-                </a>
-              </li>
-              <li>
-                <a
-                  className="hover:text-gray-900 transition-colors duration-200 font-semibold text-2xl"
-                  href="/"
-                >
-                  Instagram
-                </a>
-              </li>
-            </ul>
           </li>
         </ul>
         <div className="flex flex-col-reverse justify-between pt-5 pb-4 border-t lg:flex-row bg-top border-black">
@@ -192,7 +72,7 @@ export default function Footer() {
               href="/"
               className="text-md text-black transition-colors duration-300 hover:text-deep-purple-accent-400 font-semibold tracking-tight"
             >
-              © 2021 Company Inc.
+              © 2023 Racoon EDI.
             </a>
           </ul>
         </div>

@@ -5,11 +5,10 @@ import LoginPage from 'pages/login-page'
 import { createHashRouter, RouterProvider } from 'react-router-dom'
 import { Authenticator } from '@aws-amplify/ui-react'
 import AuthenticatedTemplate from 'layouts/authenticated'
-import Home from 'pages/dashboard-page/home'
 const router = createHashRouter([
   {
     path: '/',
-    element: <LandingPage title="Push Enhance" />
+    element: <LandingPage title="Racoon EDI" />
   },
   {
     path: '/login',
@@ -23,13 +22,7 @@ const router = createHashRouter([
           <DashboardPage />
         </AuthenticatedTemplate>
       </RequireAuth>
-    ),
-    children: [
-      {
-        path: 'home',
-        element: <Home />
-      }
-    ]
+    )
   }
 ])
 

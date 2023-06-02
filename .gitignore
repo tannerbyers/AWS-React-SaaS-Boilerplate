@@ -9,6 +9,7 @@ node_modules/
 
 # CDK project
 /Infrastructure/out/
+/Infrastructure/cdk.out/
 /Infrastructure/cdk.context.json
 
 # OS generated files

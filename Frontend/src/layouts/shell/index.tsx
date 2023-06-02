@@ -50,7 +50,7 @@ export default function Shell({
         <TopNavigation
           identity={{
             logo: { src: 'src/public/favicon.svg', alt: ' Logo' },
-            title: 'Push Enhance',
+            title: 'Racoon EDI',
             href: '/'
           }}
           i18nStrings={{

@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    background: #E7E7E7;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 3px;
+    height: 100%;
+
+}
+.container textarea {
+    background-color:  #121212;
+    border:1px solid #0dddf0;
+    resize: none;
+    width: 100%;
+    font-size: 1.4rem;
+    padding: 10px;
+    resize: vertical;
+    overflow-y: scroll;
+    color:white;
+    height: 100%;
+
+}
+.container textarea:focus {
+    outline: none;
+    color:white;
+}
+.iframe-container{
+    background: white;
+    width: 50%;
+    height: 100vh;
+    margin: 3px;
+}
+#viewer{
+    width: 100%;
+    height: 100%;
+}
+.split {
+  width:100%;
+  height:100%;
+}
+.gutter {
+  cursor: e-resize;
+  height: 100%;
+  background: grey;
+}
+.gutter.gutter-horizontal {
+    cursor: ew-resize;
+}

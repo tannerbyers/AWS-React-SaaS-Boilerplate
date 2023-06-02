@@ -23,13 +23,13 @@ const LandingPage: FC<landingPage> = ({ title }) => {
               EDI Processing for the Modern Age
             </h1>
             <p className="mb-4 xl:w-3/4 text-gray-600 text-lg">
-              Unleash the power of seamless EDI data parsing, validation, and
-              testing for X12, EDIFACT, and more!
+              Lightning-fast and easy-to-use EDI parsing, splitting, validation,
+              and configuring for any EDI format.
             </p>
             <div className="flex justify-center">
               <a
                 className="inline-flex items-center px-5 py-3 mt-2 font-medium text-white transition duration-500 ease-in-out transform bg-transparent border rounded-lg bg-gray-900"
-                href="#"
+                href="/#/login"
               >
                 <span className="justify-center">Sign Up</span>
               </a>
@@ -43,29 +43,29 @@ const LandingPage: FC<landingPage> = ({ title }) => {
             ></img>
           </div>
         </div>
-        <section className="mx-auto">
-          <div className="container px-5 mx-auto lg:px-24 ">
+        <section className="mx-auto" style={{ background: '#f5f6fe' }}>
+          <div className="container p-5 mx-auto lg:p-24 w-1/2 ">
             <div className="flex flex-col w-full mb-4 text-left lg:text-center">
-              <h1 className="mb-8 text-2xl Avenir font-semibold text-black">
-                Leveraging top-tier product companies
+              <h1 className="mb-8 text-4xl Avenir font-semibold text-black ">
+                Leveraging top-tier technologies
               </h1>
             </div>
-            <div className="grid grid-cols-2 gap-16 mb-16 text-center lg:grid-cols-4">
-              <div className="flex items-center justify-center">
+            <div className="grid m-8 text-center lg:grid-cols-4 sm:grid-cols-1">
+              <div className="flex items-center justify-center sm:pb-10">
                 <img
                   src={img3}
                   alt="AWS Logo"
                   className="block object-contain h-16 greyC"
                 ></img>
               </div>
-              <div className="flex items-center justify-center">
+              <div className="flex items-center justify-center sm:pb-8">
                 <img
                   src={img6}
                   alt="React Logo"
                   className="block object-contain h-16 greyC"
                 ></img>
               </div>
-              <div className="flex items-center justify-center">
+              <div className="flex items-center justify-center sm:pb-4">
                 <img
                   src={img2}
                   alt="Tailwind Logo"
@@ -82,13 +82,14 @@ const LandingPage: FC<landingPage> = ({ title }) => {
             </div>
           </div>
         </section>
-        <div className="grr max-w-7xl pt-20 mx-auto text-center">
+        <div className=" max-w-7xl pt-20 mx-auto text-center">
           <h1 className="mb-8 text-6xl Avenir font-semibold text-gray-900">
-            Less code, more customization.
+            Less Code, More Customization.
           </h1>
           <h1 className="mb-8 text-2xl Avenir font-semibold text-gray-600 text-center">
-            Modern EDI Parser with custom validation configurations and
-            reporting.
+            A simple UI to setup your trading partners and their EDI
+            transactions in a standardized process that is also highly
+            customizable and secure.
           </h1>
           <div className="container flex flex-col items-center justify-center mx-auto rounded-lg ">
             <img

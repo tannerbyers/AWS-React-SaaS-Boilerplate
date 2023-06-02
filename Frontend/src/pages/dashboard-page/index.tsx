@@ -9,28 +9,37 @@ import Header from '@cloudscape-design/components/header'
 import Link from '@cloudscape-design/components/link'
 import HelpPanel from '@cloudscape-design/components/help-panel'
 import Container from '@cloudscape-design/components/container'
-
+import './index.css'
 import Navigation from 'components/Navigation'
+import Editor from 'components/Editor'
 
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
 interface Props {}
 
 const Dashboard: FC<Props> = () => {
   const [activeHref, setActiveHref] = useState('')
+  const [output, setOutput] = useState('')
   return (
     <Shell
       navigation={
         <Navigation activeHref={activeHref} setActiveHref={setActiveHref} />
       }
     >
-      <ContentLayout
-        header={
-          <Header variant="h1" info={<Link variant="info">Info</Link>}>
-            Dashboard
-          </Header>
-        }
-      >
+      <ContentLayout>
         <Outlet />
+        <Container>
+          <h1 className="text-4xl">Parser</h1>
+          <div className="flex">
+            <div className="w-1/2 h-200 m-5">
+              <h2>EDI Data</h2>
+              <Editor setOutput={setOutput} />
+            </div>
+            <div className="w-1/2 m-5">
+              <h2>Output</h2>
+              {output}
+            </div>
+          </div>
+        </Container>
       </ContentLayout>
     </Shell>
   )

@@ -6,18 +6,13 @@ import { aws_cloudfront as cloudfront } from "aws-cdk-lib";
 import { aws_cognito as cognito } from "aws-cdk-lib";
 import { config } from "dotenv";
 config({});
-
-const app = new cdk.App();
 export class FrontendStack extends cdk.Stack {
   constructor(scope: Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
 
-    const websiteBucketName =
-      process.env.WEBSITE_BUCKET_NAME || "saas-template-bucket";
-    const userPoolName =
-      process.env.USER_POOL_NAME || "saas-template-user-pool";
-    const frontendDistPath =
-      process.env.FRONTEND_DIST_PATH || "../Frontend/dist";
+    const websiteBucketName = "saas-template-bucket";
+    const userPoolName = "saas-template-user-pool";
+    const frontendDistPath = "../Frontend/dist";
 
     // Create S3 Bucket for Frontend
     const websiteBucket = new s3.Bucket(this, websiteBucketName, {
@@ -27,7 +22,7 @@ export class FrontendStack extends cdk.Stack {
       // This most likely should be removed in production env. This allows for easy deletion of s3 for template testing
       autoDeleteObjects: true,
       blockPublicAccess: s3.BlockPublicAccess.BLOCK_ACLS,
-      accessControl: s3.BucketAccessControl.BUCKET_OWNER_FULL_CONTROL
+      accessControl: s3.BucketAccessControl.BUCKET_OWNER_FULL_CONTROL,
     });
 
     // Deploy S3 Bucket as website
