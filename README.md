@@ -1,5 +1,3 @@
-Here's an updated version of the README, showcasing a modern full-stack SaaS template built using AWS:
-
 # Modern Frontend SaaS Template with AWS
 
 Modern Frontend SaaS Template with AWS is a generic template designed for creating Software as a Service (SaaS) UIs within the Amazon Web Services (AWS) space. It provides a solid foundation for building a scalable and cost-efficient SaaS application that is mobile responsive and suitable for startups.
